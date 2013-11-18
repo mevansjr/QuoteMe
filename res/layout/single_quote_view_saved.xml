@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1" >
+
+    <TextView
+        android:id="@+id/singleviewsaved_quote_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/singleviewsaved_delete_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/newtop"
+        android:paddingLeft="@dimen/newtop"
+        android:paddingRight="@dimen/newtop"
+        android:paddingTop="@dimen/toptop"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/singleviewsaved_delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/deletebtn"
+        android:textColor="@color/white" />
+ 
+</RelativeLayout>

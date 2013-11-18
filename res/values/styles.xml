@@ -1,0 +1,28 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="myTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/myTheme.ActionBar</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:actionOverflowButtonStyle">@style/myTheme.OverFlow</item>
+    </style>
+
+    <style name="myTheme.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/navbar1</item>
+        <item name="android:titleTextStyle">@style/myTheme.ActionBar.Text</item>
+    </style>
+    
+    <style name="myTheme.OverFlow">
+    	<item name="android:src">@drawable/ic_action_overflow</item>
+	</style>
+
+    <style name="myTheme.ActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+	<color name="black">#000</color>
+	<color name="white">#fff</color>
+	<color name="red">#ff0000</color>
+	<color name="orange">#e08649</color>
+	<color name="blue">#028da2</color>
+
+</resources>

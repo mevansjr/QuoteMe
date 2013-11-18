@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbg2" >
+    
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+    <Button
+        android:id="@+id/home_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@layout/button_selector2"
+        android:text="@string/savebtn"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/home_delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@layout/button_selector2_red"
+        android:text="@string/deletestr"
+        android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/home_quote_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/textbgwhite"
+        android:gravity="center_vertical"
+        android:padding="@dimen/top"
+        android:scrollbars="vertical"
+        android:shadowColor="@color/white"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+ 
+</RelativeLayout>

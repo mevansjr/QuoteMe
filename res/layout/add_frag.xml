@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbg2" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit_btn"
+        android:background="@drawable/textbgwhite"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/edit_quote"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_author"
+            android:inputType="textCapSentences"
+            android:ems="10"
+            android:hint="@string/hintquote" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_author"
+            android:layout_width="275dp"
+            android:inputType="textCapSentences"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_quote"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/hintauthor" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@layout/button_selector2"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit" />
+
+</RelativeLayout>

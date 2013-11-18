@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="@drawable/thesearchbg"
+    android:shadowColor="@color/black"
+    android:paddingTop="2dp"
+    android:shadowDx="1"
+    android:shadowDy="1" >
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/Search_Button"
+        android:ems="10"
+        android:hint="@string/searchhint"
+        android:textColor="@color/black"
+        android:shadowColor="@color/white"
+        android:shadowDx="1"
+        android:shadowDy="1" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Search_Button"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@layout/button_selector"
+        android:textColor="@color/white" />
+ </RelativeLayout>
+
+    <ListView
+        android:id="@+id/List_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:divider="@android:color/transparent"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@layout/listitem_selector" >
+
+    </ListView>
+ 
+</RelativeLayout>

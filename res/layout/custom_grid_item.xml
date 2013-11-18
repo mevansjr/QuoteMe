@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/grid_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/title_activity_main"
+        android:src="@drawable/ic_gridpage" />
+
+    <TextView
+        android:id="@+id/grid_item_label"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/grid_item_image"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="28dp"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/pad20"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:text="@+id/label"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+ 
+</RelativeLayout>

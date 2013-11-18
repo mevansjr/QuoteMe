@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logopadding">10px</dimen>
+    <dimen name="pad1">15px</dimen>
+    <dimen name="textpadding">25px</dimen>
+    <dimen name="top">50px</dimen>
+    <dimen name="grid_item">100px</dimen>
+    <dimen name="newtop">65px</dimen>
+    <dimen name="toptop">95px</dimen>
+    <dimen name="pad20">20px</dimen>
+</resources>
